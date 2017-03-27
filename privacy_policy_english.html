@@ -1,0 +1,212 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The landing-page Website Template | Home :: w3layouts</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----- webfonts ------>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Open+Sans:300italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!----- webfonts ------>
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="main-header">
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							   <img src="images/logo.png" style="width: 120px" alt="">
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		<!----- //End-header---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			        	<div class="tittle-head">
+			        		<h1>Privacy Policy</h1>
+			          		<p></p>
+			          	</div>
+			        </li>
+			      </ul>
+			    </div> 
+			    <div class="clearfix"> </div>
+			    </div>
+			<!----- //End-slider---->
+	 	 <div id="about" class="team" style="padding-top: 30px;">
+	 	 	<div class="container">
+       			<div class="row text-left teams">
+       				<div class="col-md-12 team_grid">
+       					<h4>Privacy Policy</h4>
+
+						<p>1.When handling personal information at our company, we acquire it only within the range necessary for Spray's management, and use and provide it.
+						Also, beyond the scope of obtaining consent from the principal, we will manage so that personal information will not be used / provided outside purpose.</p>
+						<p>2.We will comply with laws on personal information, guidelines established by the government, and other norms.</p>
+						<p>3.In order to prevent necessary and appropriate measures for safety management of personal information handled to prevent the leakage, loss or damage of personal information to be handled, the Company injects management resources consistent with the actual situation of the business, Continually improve security system. Also, in case of emergency, we will take corrective action promptly.</p>
+						<p>4.We appoint the person responsible for the management of personal information, give responsibility and authority concerning the implementation and operation of the personal information protection management system, and manage it appropriately.</p>
+						<p>5.Our company's personal information protection management system carries out periodic audits and corrects so that appropriate operation will be carried out.Also, taking into account changes in social conditions, the environment, etc., we will continuously review our efforts to protect personal information, and we will properly improve internal regulations concerning personal information.</p>
+						<p>6.We will set up a window for personal information inquiries, such as requests for disclosure, correction, deletion, refusal to use and offer, other complaints, consultation, etc. We will respond within 2 weeks.</p>
+
+
+
+
+
+       				</div>
+       				<div class="col-md-12 team_grid">
+       					<h4>Purpose of using personal information</h4>
+
+						<p>Personal information acquired through our service will be used for the following purposes.</p>
+						<p>1.Individual authentication at the time of using our service, for displaying name etc. on screen of each service</p>
+						<p>2.To promote communication between operators and users on each service</p>
+						<p>3.For guidance on maintenance, important notices etc.</p>
+						<p>4.For billing to customers who use paid services for corporations</p>
+						<p>5.In order to improve our services and use it for development of new services</p>
+						<p>6.To create statistical data in a range where individuals can not be identified</p>
+						<p>7.In order to send our service materials to customers who have contacted our service</p>
+						<p>8.In order to respond to customer inquiries about our service by telephone</p>
+						<p>9.In addition, for the purpose of announcing the purpose of use in providing each service, for agreement</p>
+
+
+       				</div>
+       				<div class="col-md-12 team_grid">
+       					<h4>Restrictions on the use of personal information</h4>
+
+						<p>We do not obtain the consent of the person in advance and do not handle personal information outside the scope of the purpose of use.However, this does not apply in the following cases.</p>
+						<p>1.According to laws and ordinances
+						<p>2.When it is necessary for the protection of human life, body or property, it is difficult to obtain the consent of the person himself / herself.</p>
+						<p>3.When it is particularly necessary for the improvement of public health or the promotion of healthy development of children, it is difficult to obtain consent of the person himself / herself.</p>
+						<p>4.In cases where it is necessary for a national institution or a local public entity or a person entrusted with such consultation to cooperate in carrying out the affairs prescribed by laws and regulations and obtaining consent of the person himself / herself, it will hinder the execution of the affairs When there is a danger of exerting it.</p>
+
+       				</div>
+       				<div class="col-md-12 team_grid">
+       					<h4>About gathering information</h4>
+
+						<p>At the time of providing the service, we mainly obtain information on customers like the following.</p>
+						<p>1.Personal information obtained through services operated on SNS such as Instagram</p>
+						<p>2.Information acquired on the use of services</p>
+						<p>3.Information acquired mechanically when accessing the service</p>
+						<p>Regarding requests for deletion of information about customers, due to the nature of retained data, we may not be able to respond to deletion.In this case, we will respond by stopping the use of the retained data.</p>
+
+       				</div>
+       				<div class="col-md-12 team_grid">
+       					<h4>About revision of privacy policy</h4>
+
+						<p>We may revise some or all of our privacy policy.We will notify you on important changes if there are important changes.</p>
+
+       				</div>
+       				<div class="col-md-12 team_grid">
+       					<h4>＜Consultation window on personal information＞</h4>
+
+						<p>For inquiries regarding our privacy policy, please contact below.</p>
+						<p>株式会社クロスリング　代表取締役　村上</p>
+						<p>住所：〒107-0062　東京都港区南青山1-15-9 第45興和ビル B1</p>
+						<p>Tel　 03-6851-0921</p>
+       				</div>
+
+       			</div>
+       		</div>
+	 	 </div>
+				<div class="footer">
+						<div class="container">
+							<div class="logo2">
+								   <img src="images/logo2.png" style="width: 120px" alt="">
+							</div>
+							<div class="copy-right">
+								<p>&copy; 2016  All rights  Reserved | <a href="./privacy_policy_english.html">Privacy policy</a></p>
+							</div>								
+							<div class="clearfix"> </div>
+						</div>	
+				</div>	
+
+				<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>

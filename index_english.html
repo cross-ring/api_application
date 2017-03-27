@@ -1,0 +1,265 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The landing-page Website Template | Home :: w3layouts</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----- webfonts ------>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Open+Sans:300italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!----- webfonts ------>
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="main-header">
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							   <img src="images/logo.png" style="width: 120px" alt="">
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li><a href="#about" class="scroll">About</a></li>
+								<li><a href="#services" class="scroll">Services</a></li>
+								<li><a href="#portfolio" class="scroll">Portfolio</a></li>
+								<li><a href="#team" class="scroll">Our Work</a></li>
+								<li><a href="#contact" class="scroll">how to use</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		<!----- //End-header---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			        	<div class="tittle-head">
+			        		<h1>Spray</h1>
+			          		<p></p>
+			          	</div>
+			        </li>
+			      </ul>
+			    </div> 
+			    <div class="clearfix"> </div>
+			    </div>
+			<!----- //End-slider---->
+			<div id="about" class="about">
+				<div class="container">
+					<div class="about-head">
+						<h3>About</h3>
+						<p>Spray is a service that supports the marketing of influencers themselves. We have been influencer marketing for 13 years. We will provide analytical tools that enable advertisers and brands to visualize the influence of influencers.You can simulate the compatibility with enterprises by analyzing analysis tools and company accounts that can visualize the influence of influencers and the affinity of hash tags.
+
+						This time we will analyze the tag of Instagram.
+						By analyzing tags of Instagram, we analyze by machine learning what kind of tags are given to posts to maximize social effect.
+						We believe that influencers can broaden their influence by doing so.
+						</p>
+					</div>
+				</div>
+				
+			</div>
+			<!----- //End-about---->
+			<div id="services" class="services">
+       		<div class="container">
+       		   <div class="gallery-head text-center">
+				  <h3>Services</h3>
+			    </div>
+       			<div class="row text-center feature">
+       				<div class="col-md-4 service_grid">
+       					<img src="images/analytics_c.png"> </img>
+       					<h3>post reporting</h3>
+       					<p>In order to measure the influence of influencers, you can report on what kind of trends or comments have been added to the ones posted by influencers after posting.</p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       					<img src="images/analytics.png"> </img>
+       					<h3>Influencer analytics</h3>
+       					<p>Analyzing influencers to make sure that the products offered by advertisers and brands are truly compatible with their influencers makes it possible for optimal marketing</p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       					<img src="images/search.png"> </img>
+       					<h3>brands company analytics</h3>
+       					<p>Register company accounts and analyze trends of followers of corporate accounts after campaigning, and visualize the development of enterprises.</p>
+       				</div>
+
+       				<div class="col-md-4 service_grid">
+       					<img src="images/brand.png"> </img>
+       					<h3>Improve follower · brand power</h3>
+       					<p>By influencer's own marketing, followers with a high engagement rate are interested in corporate accounts and you can earn a better follower, which also leads to increased brand power.</p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       					<img src="images/support.png"> </img>
+       					<h3>Polite customer support</h3>
+       					<p>We are accepting a 24 hour free support system that allows you to discuss anything you are having trouble with, services you do not understand at any time. For example, our excellent staff will respond to consultations such as what kind of goods are compatible with influencer etc.</p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       					<img src="images/icon_tag.png" style="width:35%;"> </img>
+       					<h3>Influencer tag analytics</h3>
+       					<p>We analyze what influencers can maximize effect by assigning tags to posts using machine learning.</p>
+       				</div>
+
+       			</div>
+       		</div>
+       	</div>
+ 	<div id="portfolio" class="potrfolio-content">
+ 		<div class="container">
+ 			<div class="port-head">
+ 				<h3>Portfolio</h3>
+ 				<p>Our work </p>
+ 			</div>
+			 	<div id="portfoliolist">
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view ">
+								<img src="images/jonthon.jpg" />
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view">
+								<img src="images/ash.jpg" />
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view">
+								<img src="images/wb.jpg" />
+							</div>
+						</div>
+					</div>	
+				</div>
+			 </div>
+	 	 </div>
+	 	 <div id="team" class="team">
+	 	 	<div class="container">
+	 	 		<div class="team-head">
+	 	 			<h3>Our Work</h3>
+ 					<p></p>
+	 	 		</div>
+       			<div class="row text-left teams">
+       				<div class="col-md-12 team_grid">
+       					<div class="view2 second-effect2">
+							 <img src="images/work_jonthon.png" style="width: 400px" />
+						</div>
+       					<h3>Johnson & Johnson</h3>
+       					<p>Johnson & Johnson's "Band-Aid Kizpower Pad" product We recommended the influencer and posted it. Having three influencers appointed and posted, then posted on the media called ModelPress, and conducted its reaction reporting.</p>
+       				</div>
+       				<div class="col-md-12 team_grid">
+       				<div class="view2 second-effect2">
+							 <img src="images/work_ash.png" style="width:400px" />
+							</div>
+       					<h3>H.P.FRANCE</h3>
+       					<p>In the PR of a collaboration pop-up shop of OLDNAVY and ViVi newly established in Omotesando, we matched it with a fashionable child, a fashion sensitive high influencer, asked me to go and play and sent me the feel of the shop. The response from the followers was also high, and the effect that Influencer's influence grew has come up to the result.</p>
+       				</div>
+       				<div class="col-md-12 team_grid">
+       					<div class="view2 second-effect2">
+							 <img src="images/work2_wb.png" style="width:400px" />
+							</div>
+       					<h3>Warner Bros. Japan LLC</h3>
+       					<p>the opening of The Little Prince, there are cases where you collaborated with moms and housewife influencers。After watching the movie, We asked influencer to post impressions. After submission, we submitted the result of tabulating posts to Warner Bros. Japan LLC.The support rate has increased from the general population who have children, resulting in an increase in influencer influence.</p>
+       				</div>
+       			</div>
+       		</div>
+	 	 </div>
+				<div class="footer">
+						<div class="container">
+							<div class="logo2">
+								   <img src="images/logo2.png" style="width: 120px" alt="">
+							</div>
+							<div class="copy-right">
+								<p>&copy; 2016  All rights  Reserved | <a href="./privacy_policy.html">Privacy Policy</a></p>
+							</div>								
+							<div class="clearfix"> </div>
+						</div>	
+				</div>	
+
+				<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>

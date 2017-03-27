@@ -1,0 +1,290 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The landing-page Website Template | Home :: w3layouts</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----- webfonts ------>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Open+Sans:300italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!----- webfonts ------>
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="main-header">
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							   <img src="images/logo.png" style="width: 120px" alt="">
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">ホーム </a></li>
+								<li><a href="#about" class="scroll">概要</a></li>
+								<li><a href="#services" class="scroll">特徴</a></li>
+								<li><a href="#portfolio" class="scroll">実績企業</a></li>
+								<li><a href="#team" class="scroll">実績</a></li>
+								<li><a href="#contact" class="scroll">使い方</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		<!----- //End-header---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			        	<div class="tittle-head">
+			        		<h1>Spray</h1>
+			          		<p></p>
+			          	</div>
+			        </li>
+			      </ul>
+			    </div> 
+			    <div class="clearfix"> </div>
+			    </div>
+			<!----- //End-slider---->
+			<div id="about" class="about">
+				<div class="container">
+					<div class="about-head">
+						<h3>概要</h3>
+						<p>Sprayは、インフルエンサー自体のマーケティングをサポートするサービスです。弊社は13年間インフルエンサーマーケティングを行ってきました。その実績や経験のノウハウをくみ込まれた独自アリゴリズムによってクライアントがインフルエンサーと相性の良い商品をレコメンドし、投稿してもらうことによりインフルエンサーがより一層影響力を持てるようなサービスとなってます。インフルエンサーの影響力を可視化できるような分析ツールや企業アカウントの分析による企業との相性、ハッシュタグの親和性をシミュレーションできます。
+						</p>
+					</div>
+				</div>
+				
+			</div>
+			<!----- //End-about---->
+			<div id="services" class="services">
+       		<div class="container">
+       		   <div class="gallery-head text-center">
+				  <h3>特徴</h3>
+			    </div>
+       			<div class="row text-center feature">
+       				<div class="col-md-4 service_grid">
+       					<img src="images/analytics_c.png"> </img>
+       					<h3>投稿レポーティング</h3>
+       					<p>インフルエンサーの影響力を測定するため、インフルエンサーが投稿したものに対して、投稿してからどのような推移でいいねやコメントがついたのかをレポーティングすることができます。</p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       					<img src="images/analytics.png"> </img>
+       					<h3>インフルエンサー分析</h3>
+       					<p>インフルエンサー自体のマーケティングに必須である商品が果たしてそのインフルエンサーと相性がどれくらいよいのかをインフルエンサーを分析することによって最適なマーケティングが可能になります</p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       					<img src="images/search.png"> </img>
+       					<h3>企業アカウント分析</h3>
+       					<p>企業アカウントを登録し、キャンペーンを行ってからの企業アカウントのフォロワーの推移などを分析を行い、企業の発展を可視化できます。</p>
+       				</div>
+
+       				<div class="col-md-6 service_grid">
+       					<img src="images/brand.png"> </img>
+       					<h3>フォロワー・ブランド力アップ</h3>
+       					<p>インフルエンサ自体のマーケティングにより、エンゲージメント率の高いフォロワーが企業アカウントに興味を示し、より質の良いフォロワーを獲得でき、それはブランド力アップにもつながります。</p>
+       				</div>
+       				<div class="col-md-6 service_grid">
+       					<img src="images/support.png"> </img>
+       					<h3>丁寧なカスタマーサポート</h3>
+       					<p>サービスを使用していてお困りのこと、わからないことなどをいつでも相談できるようなサポート体制を24時間無料で受け付けてます。たとえば、インフルエンサーとどのような商品が相性が良いのかなどのご相談などを弊社の優秀なスタッフがお答えします。</p>
+       				</div>
+
+       			</div>
+       		</div>
+       	</div>
+ 	<div id="portfolio" class="potrfolio-content">
+ 		<div class="container">
+ 			<div class="port-head">
+ 				<h3>実績企業</h3>
+ 				<p>Our work </p>
+ 			</div>
+			 	<div id="portfoliolist">
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view ">
+								<img src="images/jonthon.jpg" />
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view">
+								<img src="images/ash.jpg" />
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view">
+								<img src="images/wb.jpg" />
+							</div>
+						</div>
+					</div>	
+				</div>
+			 </div>
+	 	 </div>
+	 	 <div id="team" class="team">
+	 	 	<div class="container">
+	 	 		<div class="team-head">
+	 	 			<h3>実績</h3>
+ 					<p>弊社で行っている実際の実績</p>
+	 	 		</div>
+       			<div class="row text-left teams">
+       				<div class="col-md-12 team_grid">
+       					<div class="view2 second-effect2">
+							 <img src="images/work_jonthon.png" style="width: 400px" />
+						</div>
+       					<h3>ジョンソン・エンド・ジョンソン</h3>
+       					<p>ジョンソンエンドジョンソン様の「バンドエイドキズパワーパッド」の商品を実際にインフルエンサーにレコメンドし、投稿を行ってもらった。インフルエンサー3人を起用し、投稿を行ってもらい、その後ModelPressというメディアにも掲載し、その反応レポーティングを行った。</p>
+       				</div>
+       				<div class="col-md-12 team_grid">
+       				<div class="view2 second-effect2">
+							 <img src="images/work_ash.png" style="width:400px" />
+							</div>
+       					<h3>アッシュペーフランス</h3>
+       					<p>表参道に新設されたOLDNAVYとViViのコラボのポップアップショップのPRでは、おしゃれな子、ファッション感度の高いインフルエンサーとマッチングさせ、遊びに行ってもらいショップの感じを投稿してもらいました。フォロワーからの反応も高く、インフルエンサーの影響力が伸びたという結果まで出ています。</p>
+       				</div>
+       				<div class="col-md-12 team_grid">
+       					<div class="view2 second-effect2">
+							 <img src="images/work2_wb.png" style="width:400px" />
+							</div>
+       					<h3>ワーナーブラザーズジャパン</h3>
+       					<p>リトリプリンス星の王子様の公開に先立ち、ママさんや主婦層のインフルエンサーとコラボしてもらった例もあります。映画を観終わった後、観想を投稿してもらいそのレポーティングを行うという形でおこないました。お子さんのいる一般の方々からすごく支持率が伸びインフルエンサーの影響力が伸びた結果になりました。</p>
+       				</div>
+       			</div>
+       		</div>
+	 	 </div>
+	 	 <div id="contact" class="contact">
+	 	 	<div class="container">
+	 	 		<div class="team-head">
+	 	 			<h3>使い方</h3>
+ 					<p>サービスの使い方</p>
+	 	 		</div>
+       			<div class="row text-left teams">
+       				<div class="col-md-12 team_grid">
+       					<div class="view2 second-effect2">
+							 <img src="images/step1.png" style="width: 400px" />
+						</div>
+       					<h3>STEP1</h3>
+       					<p>まずは、インフルエンサー一覧から自社の商品と相性の良いインフルエンサーを探します。Twitter、Instagram、Facebook主要なSNSを網羅しておりますので、商品とイメージのあうプラットフォームでのマッチングが成立します。</br>
+       					※ すべてインフルエンサー本人から許諾をいただいております</p>
+       				</div>
+       				<div class="col-md-12 team_grid">
+       				<div class="view2 second-effect2">
+							 <img src="images/step3.png" style="width:400px" />
+							</div>
+       					<h3>STEP2</h3>
+       					<p>インフルエンサー自体のマーケティングに貢献できるような自社の商品を入力し、インフルエンサー一覧から一覧から商品に合うようなインフルエンサーを選択する。</br>
+       					※ 詳しい使い方がわからない場合は右下のメニューから直接弊社スタッフにご連絡することが可能です。
+       					</p>
+       				</div>
+       				<div class="col-md-12 team_grid">
+       					<div class="view2 second-effect2">
+							 <img src="images/step4.png" style="width:400px" />
+							</div>
+       					<h3>STEP3</h3>
+       					<p>最後に、商品の情報をキャスティングを行う。キャスティングボタンが押されると弊社スタッフに連絡が行き、弊社内で本当にその商品が選択されたインフルエンサーと相性が良いのかを精査します。その後問題ないようであれば、手配するという流れになっています。</p>
+       				</div>
+       			</div>
+       		</div>
+	 	 </div>
+				<div class="footer">
+						<div class="container">
+							<div class="logo2">
+								   <img src="images/logo2.png" style="width: 120px" alt="">
+							</div>
+							<div class="copy-right">
+								<p>&copy; 2016  All rights  Reserved | <a href="http://w3layouts.com">プライバシーポリシー</a></p>
+							</div>								
+							<div class="clearfix"> </div>
+						</div>	
+				</div>	
+
+				<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>
